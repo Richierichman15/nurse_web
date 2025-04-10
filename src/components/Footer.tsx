@@ -6,7 +6,7 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
           <div>
-            <h3 className="text-lg sm:text-xl font-semibold mb-4">True Care Staffing</h3>
+            <h3 className="text-lg sm:text-xl font-semibold mb-4">TruCare Senior Services</h3>
             <p className="text-sm sm:text-base text-gray-300">
               Providing quality healthcare staffing solutions in Oklahoma City and surrounding areas.
             </p>
@@ -40,14 +40,18 @@ const Footer = () => {
             <h3 className="text-lg sm:text-xl font-semibold mb-4">Contact Info</h3>
             <ul className="space-y-2">
               <li className="text-sm sm:text-base text-gray-300">
-                123 Healthcare Way<br />
-                Oklahoma City, OK 73101
+                10802 Quail Plaza Dr<br />
+                Suite 210<br />
+                Oklahoma City, OK 73120
               </li>
               <li className="text-sm sm:text-base text-gray-300">
-                Phone: (405) 555-0123
+                Phone: 405-268-7331
               </li>
               <li className="text-sm sm:text-base text-gray-300">
-                Email: info@truecarestaffing.com
+                Fax: 405-849-4862
+              </li>
+              <li className="text-sm sm:text-base text-gray-300">
+                Email: info@trucaresenior.services
               </li>
             </ul>
           </div>
@@ -65,7 +69,7 @@ const Footer = () => {
         </div>
         <div className="mt-8 pt-8 border-t border-gray-800">
           <p className="text-center text-sm sm:text-base text-gray-300">
-            © {new Date().getFullYear()} True Care Staffing. All rights reserved.
+            © {new Date().getFullYear()} TruCare Senior Services. All rights reserved.
           </p>
         </div>
       </div>
