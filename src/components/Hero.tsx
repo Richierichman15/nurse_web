@@ -11,21 +11,29 @@ const Hero = () => {
         />
         <div className="absolute inset-0 bg-blue-600 mix-blend-multiply" />
       </div>
-      <div className="relative max-w-7xl mx-auto py-24 px-4 sm:py-32 sm:px-6 lg:px-8">
-        <h1 className="text-4xl font-extrabold tracking-tight text-white sm:text-5xl lg:text-6xl">
-          Quality Healthcare Staffing Solutions in Oklahoma City
-        </h1>
-        <p className="mt-6 text-xl text-blue-100 max-w-3xl">
-          True Care Staffing provides exceptional healthcare professionals to meet your facility's needs. 
-          We connect skilled nurses and healthcare workers with top medical facilities in Oklahoma City.
-        </p>
-        <div className="mt-10">
-          <Link
-            href="/contact"
-            className="inline-block bg-white py-3 px-8 border border-transparent rounded-md text-base font-medium text-blue-600 hover:bg-blue-50"
-          >
-            Get Started
-          </Link>
+      <div className="relative max-w-7xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
+        <div className="text-center">
+          <h1 className="text-3xl font-extrabold tracking-tight text-white sm:text-4xl lg:text-5xl">
+            Quality Healthcare Staffing Solutions in Oklahoma City
+          </h1>
+          <p className="mt-6 text-lg text-blue-100 max-w-3xl mx-auto">
+            True Care Staffing provides exceptional healthcare professionals to meet your facility&apos;s needs. 
+            We connect skilled nurses and healthcare workers with top medical facilities in Oklahoma City.
+          </p>
+          <div className="mt-10 flex flex-col sm:flex-row justify-center gap-4">
+            <Link
+              href="/contact"
+              className="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-blue-600 bg-white hover:bg-blue-50"
+            >
+              Get Started
+            </Link>
+            <Link
+              href="/services"
+              className="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-700 hover:bg-blue-800"
+            >
+              Our Services
+            </Link>
+          </div>
         </div>
       </div>
     </div>
