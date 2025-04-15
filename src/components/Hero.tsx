@@ -18,7 +18,7 @@ const Hero = () => {
           </h1>
           <p className="mt-6 text-lg text-blue-100 max-w-3xl mx-auto">
             True Care Staffing provides exceptional healthcare professionals to meet your facility&apos;s needs. 
-            We connect skilled nurses and healthcare workers with top medical facilities in Oklahoma City.
+            We connect skilled nurses and healthcare workers with top medical facilities in Oklahoma City. We also do at home care.
           </p>
           <div className="mt-10 flex flex-col sm:flex-row justify-center gap-4">
             <Link
