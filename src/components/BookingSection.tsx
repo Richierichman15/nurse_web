@@ -18,7 +18,6 @@ const BookingSection = () => {
             <BookingForm />
           </div>
           
-          {/* Service Limitations Section */}
           <div className="mt-12 bg-white/80 backdrop-blur-sm p-6 rounded-xl shadow-lg">
             <h3 className="text-xl font-semibold text-[#111827] mb-4">
               Important Service Limitations
