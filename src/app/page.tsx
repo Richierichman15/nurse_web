@@ -2,49 +2,40 @@ import Services from '@/components/Services';
 import BookingSection from '@/components/BookingSection';
 import Contact from '@/components/Contact';
 import Footer from '@/components/Footer';
-import Image from 'next/image';
+import Slideshow from '@/components/Slideshow';
 import Link from 'next/link';
 
 export default function Home() {
   return (
     <main className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-blue-50 to-green-50 py-20 sm:py-32">
-        <div className="absolute inset-0 overflow-hidden">
-          <div className="absolute inset-0 bg-[url('/images/care-home-bg.jpg')] bg-cover bg-center opacity-10 blur-sm" />
-        </div>
+      <section className="relative bg-gradient-to-br from-[#F0F4FF] to-[#E6F1FA] py-20 sm:py-32">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="text-center lg:text-left">
-              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 mb-6">
+              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-[#111827] mb-6">
                 Compassionate Care When You Need It Most
               </h1>
-              <p className="text-lg sm:text-xl text-gray-600 mb-8">
+              <p className="text-lg sm:text-xl text-[#374151] mb-8">
                 Connecting seniors and caregivers with trusted nursing professionals in Oklahoma City.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
                 <Link 
                   href="/booking" 
-                  className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg text-lg font-semibold transition-colors"
+                  className="bg-[#1E3A8A] hover:bg-[#1E3A8A]/90 text-white px-8 py-3 rounded-lg text-lg font-semibold transition-colors"
                 >
                   Request a Nurse
                 </Link>
                 <Link 
                   href="/services" 
-                  className="bg-white hover:bg-gray-50 text-blue-600 px-8 py-3 rounded-lg text-lg font-semibold border-2 border-blue-600 transition-colors"
+                  className="bg-white hover:bg-gray-50 text-[#1E3A8A] px-8 py-3 rounded-lg text-lg font-semibold border-2 border-[#1E3A8A] transition-colors"
                 >
                   Learn More
                 </Link>
               </div>
             </div>
             <div className="relative h-[400px] lg:h-[500px]">
-              <Image
-                src="/images/nurse.jpeg"
-                alt="Friendly nurse assisting a senior citizen"
-                fill
-                className="object-contain"
-                priority
-              />
+              <Slideshow />
             </div>
           </div>
         </div>
@@ -53,7 +44,7 @@ export default function Home() {
       {/* Testimonials Section */}
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl sm:text-4xl font-bold text-center text-gray-900 mb-12">
+          <h2 className="text-3xl sm:text-4xl font-bold text-center text-[#111827] mb-12">
             What Our Clients Say
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -63,17 +54,17 @@ export default function Home() {
                 className="bg-gray-50 p-8 rounded-xl shadow-sm hover:shadow-md transition-shadow"
               >
                 <div className="flex items-center mb-4">
-                  <div className="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center">
-                    <span className="text-blue-600 text-xl font-semibold">
+                  <div className="w-12 h-12 rounded-full bg-[#F0F4FF] flex items-center justify-center">
+                    <span className="text-[#1E3A8A] text-xl font-semibold">
                       {testimonial.name.charAt(0)}
                     </span>
                   </div>
                   <div className="ml-4">
-                    <h3 className="text-lg font-semibold text-gray-900">{testimonial.name}</h3>
-                    <p className="text-gray-500">{testimonial.role}</p>
+                    <h3 className="text-lg font-semibold text-[#111827]">{testimonial.name}</h3>
+                    <p className="text-[#374151]">{testimonial.role}</p>
                   </div>
                 </div>
-                <p className="text-gray-600">{testimonial.quote}</p>
+                <p className="text-[#374151]">{testimonial.quote}</p>
               </div>
             ))}
           </div>
