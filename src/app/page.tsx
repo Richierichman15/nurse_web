@@ -1,5 +1,3 @@
-import Navbar from '@/components/Navbar';
-import Hero from '@/components/Hero';
 import Services from '@/components/Services';
 import BookingSection from '@/components/BookingSection';
 import Contact from '@/components/Contact';
@@ -10,7 +8,6 @@ import Link from 'next/link';
 export default function Home() {
   return (
     <main className="min-h-screen">
-      <Navbar />
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-blue-50 to-green-50 py-20 sm:py-32">
         <div className="absolute inset-0 overflow-hidden">
@@ -27,7 +24,7 @@ export default function Home() {
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
                 <Link 
-                  href="/contact" 
+                  href="/booking" 
                   className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg text-lg font-semibold transition-colors"
                 >
                   Request a Nurse
@@ -42,7 +39,7 @@ export default function Home() {
             </div>
             <div className="relative h-[400px] lg:h-[500px]">
               <Image
-                src="/images/nurse-senior-illustration.png"
+                src="/images/nurse.jpeg"
                 alt="Friendly nurse assisting a senior citizen"
                 fill
                 className="object-contain"

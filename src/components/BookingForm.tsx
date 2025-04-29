@@ -71,11 +71,11 @@ const BookingForm = () => {
 
   return (
     <div className="bg-white p-4 sm:p-8 rounded-lg shadow-lg">
-      <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6">Book a Nurse</h2>
+      <h2 className="text-xl sm:text-2xl font-bold text-[#111827] mb-6">Book a Nurse</h2>
       <form onSubmit={handleSubmit} className="space-y-4 sm:space-y-6">
         <div className="grid grid-cols-1 gap-4 sm:gap-6 sm:grid-cols-2">
           <div>
-            <label htmlFor="name" className="block text-sm font-medium text-gray-700">
+            <label htmlFor="name" className="block text-sm font-medium text-[#374151]">
               Full Name
             </label>
             <input
@@ -85,11 +85,11 @@ const BookingForm = () => {
               required
               value={formData.name}
               onChange={handleChange}
-              className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm"
+              className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-[#1E3A8A] focus:ring-[#1E3A8A] sm:text-sm"
             />
           </div>
           <div>
-            <label htmlFor="email" className="block text-sm font-medium text-gray-700">
+            <label htmlFor="email" className="block text-sm font-medium text-[#374151]">
               Email
             </label>
             <input
@@ -99,11 +99,11 @@ const BookingForm = () => {
               required
               value={formData.email}
               onChange={handleChange}
-              className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm"
+              className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-[#1E3A8A] focus:ring-[#1E3A8A] sm:text-sm"
             />
           </div>
           <div>
-            <label htmlFor="phone" className="block text-sm font-medium text-gray-700">
+            <label htmlFor="phone" className="block text-sm font-medium text-[#374151]">
               Phone Number
             </label>
             <input
@@ -113,11 +113,11 @@ const BookingForm = () => {
               required
               value={formData.phone}
               onChange={handleChange}
-              className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm"
+              className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-[#1E3A8A] focus:ring-[#1E3A8A] sm:text-sm"
             />
           </div>
           <div>
-            <label htmlFor="careType" className="block text-sm font-medium text-gray-700">
+            <label htmlFor="careType" className="block text-sm font-medium text-[#374151]">
               Type of Care Needed
             </label>
             <select
@@ -126,7 +126,7 @@ const BookingForm = () => {
               required
               value={formData.careType}
               onChange={handleChange}
-              className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm"
+              className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-[#1E3A8A] focus:ring-[#1E3A8A] sm:text-sm"
             >
               <option value="">Select care type</option>
               {careTypes.map((type) => (
@@ -137,7 +137,7 @@ const BookingForm = () => {
             </select>
           </div>
           <div>
-            <label htmlFor="date" className="block text-sm font-medium text-gray-700">
+            <label htmlFor="date" className="block text-sm font-medium text-[#374151]">
               Date
             </label>
             <input
@@ -147,11 +147,11 @@ const BookingForm = () => {
               required
               value={formData.date}
               onChange={handleChange}
-              className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm"
+              className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-[#1E3A8A] focus:ring-[#1E3A8A] sm:text-sm"
             />
           </div>
           <div>
-            <label htmlFor="time" className="block text-sm font-medium text-gray-700">
+            <label htmlFor="time" className="block text-sm font-medium text-[#374151]">
               Time
             </label>
             <input
@@ -161,12 +161,12 @@ const BookingForm = () => {
               required
               value={formData.time}
               onChange={handleChange}
-              className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm"
+              className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-[#1E3A8A] focus:ring-[#1E3A8A] sm:text-sm"
             />
           </div>
         </div>
         <div>
-          <label htmlFor="address" className="block text-sm font-medium text-gray-700">
+          <label htmlFor="address" className="block text-sm font-medium text-[#374151]">
             Address
           </label>
           <input
@@ -176,12 +176,12 @@ const BookingForm = () => {
             required
             value={formData.address}
             onChange={handleChange}
-            className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm"
+            className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-[#1E3A8A] focus:ring-[#1E3A8A] sm:text-sm"
           />
         </div>
         <div className="grid grid-cols-1 gap-4 sm:gap-6 sm:grid-cols-3">
           <div>
-            <label htmlFor="city" className="block text-sm font-medium text-gray-700">
+            <label htmlFor="city" className="block text-sm font-medium text-[#374151]">
               City
             </label>
             <input
@@ -191,11 +191,11 @@ const BookingForm = () => {
               required
               value={formData.city}
               onChange={handleChange}
-              className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm"
+              className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-[#1E3A8A] focus:ring-[#1E3A8A] sm:text-sm"
             />
           </div>
           <div>
-            <label htmlFor="state" className="block text-sm font-medium text-gray-700">
+            <label htmlFor="state" className="block text-sm font-medium text-[#374151]">
               State
             </label>
             <input
@@ -205,11 +205,11 @@ const BookingForm = () => {
               required
               value={formData.state}
               onChange={handleChange}
-              className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm"
+              className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-[#1E3A8A] focus:ring-[#1E3A8A] sm:text-sm"
             />
           </div>
           <div>
-            <label htmlFor="zipCode" className="block text-sm font-medium text-gray-700">
+            <label htmlFor="zipCode" className="block text-sm font-medium text-[#374151]">
               ZIP Code
             </label>
             <input
@@ -219,12 +219,12 @@ const BookingForm = () => {
               required
               value={formData.zipCode}
               onChange={handleChange}
-              className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm"
+              className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-[#1E3A8A] focus:ring-[#1E3A8A] sm:text-sm"
             />
           </div>
         </div>
         <div>
-          <label htmlFor="additionalNotes" className="block text-sm font-medium text-gray-700">
+          <label htmlFor="additionalNotes" className="block text-sm font-medium text-[#374151]">
             Additional Notes
           </label>
           <textarea
@@ -233,13 +233,13 @@ const BookingForm = () => {
             rows={4}
             value={formData.additionalNotes}
             onChange={handleChange}
-            className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm"
+            className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-[#1E3A8A] focus:ring-[#1E3A8A] sm:text-sm"
           />
         </div>
         <div>
           <button
             type="submit"
-            className="w-full bg-blue-600 text-white py-2 px-4 rounded-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 sm:text-sm"
+            className="w-full bg-[#1E3A8A] text-white py-2 px-4 rounded-md hover:bg-[#1E3A8A]/90 focus:outline-none focus:ring-2 focus:ring-[#1E3A8A] focus:ring-offset-2 sm:text-sm transition-colors"
           >
             Submit Booking Request
           </button>
